@@ -45,7 +45,7 @@
 			disabled={!selectable}
 			on:click={() => dispatch('selected', !selected)}
 			class="text-color-4 border-color-4 shrink-0 select-none border-r px-0.5 text-right text-xs {bgColor}"
-			style:min-width={minWidth + 'rem'}
+			style="min-width: {minWidth + 'rem'}; cursor: {readonly ? 'pointer' : 'grab'};"
 		>
 			{line.beforeLineNumber || ''}
 		</button>
@@ -53,7 +53,7 @@
 			disabled={!selectable}
 			on:click={() => dispatch('selected', !selected)}
 			class="text-color-4 border-color-4 shrink-0 select-none border-r px-0.5 text-right text-xs {bgColor}"
-			style:min-width={minWidth + 'rem'}
+			style="min-width: {minWidth + 'rem'}; cursor: {readonly ? 'pointer' : 'grab'};"
 		>
 			{line.afterLineNumber || ''}
 		</button>
